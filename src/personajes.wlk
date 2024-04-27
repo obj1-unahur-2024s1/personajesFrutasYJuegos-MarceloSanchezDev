@@ -34,6 +34,26 @@ object martin {
 		if(despensa != null){despensa.madurar()}
 	}
 }
+object maria{
+	var endorfina = 100
+	var amuleto = amuletoRojo
+	
+	method energia(){
+		return 2 * endorfina + amuleto.energia()
+	}
+	 method esFeliz() {
+        return endorfina > amuleto.energia()
+    }
+	
+}
+object pepe{
+	const property energia = 77
+	const property esFeliz = true
+}
+//amuletos
+object amuletoRojo{var property energia = 14 }
+object amuletoAmarillo{var property energia = 5 }
+object amuletoVerde{var property energia = 7}
 
 
 //ciudad

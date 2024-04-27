@@ -1,4 +1,4 @@
-
+import personajes.*
 //deportes
 object voley{
 	var property minutos = 2

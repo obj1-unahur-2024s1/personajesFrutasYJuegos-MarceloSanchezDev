@@ -1,0 +1,26 @@
+import personajes.*
+import frutas.*
+describe "nuevo Dia"{
+test "energia de martin debe ser de 150"{
+	martin.dormir()
+	assert.equals(150, martin.energia())
+}
+test "la manzana tiene que madurar" {
+	martin.hacerCompras(manzana)
+	martin.dormir()
+	assert.that(manzana.estaRoja())
+
+}
+test "la mandarina tiene que madurar" {
+	martin.hacerCompras(mandarina)
+	martin.dormir()
+	assert.equals(54,mandarina.gramos())
+
+}
+test "la banana tiene que decir nada" {
+	martin.hacerCompras(banana)
+	martin.dormir()
+	assert.equals("Nada",banana.madurar())
+
+}
+}
